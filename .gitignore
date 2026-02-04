@@ -1,0 +1,20 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model artifacts
+*.pkl
+*.joblib
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (never push raw data)
+data/
+
+# Editor / OS junk
+.vscode/
+.DS_Store
