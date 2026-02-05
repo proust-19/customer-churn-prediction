@@ -125,6 +125,7 @@ xgb_auc = roc_auc_score(y_test, xgb_proba)
 
 print("\n=== XGBoost (threshold=0.5) ===")
 print("XGBoost ROC-AUC:", xgb_auc)
+# getting 0.825 in XGBoost
 
 
 # -------- Interpretability (LogReg coefficients) --------
@@ -142,6 +143,6 @@ print(feature_importance.head(10))
 print("\nTop features reducing churn:")
 print(feature_importance.tail(10))
 
-# ✅ Save final chosen model (you chose LogReg)
+# ✅ Save final chosen model (I chose LogReg b/c ROC-AUC = 0.836)
 joblib.dump(logreg_model, cg.MODEL_PATH)
 print("Model saved successfully.")
